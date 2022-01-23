@@ -1,0 +1,6 @@
+_extends: .github
+repository:
+  name: base
+  description: form8ion plugin for management of an organization's `.github` repository
+  homepage: https://npm.im/@form8ion/base
+  private: false
