@@ -20,12 +20,12 @@ suite('repository settings', () => {
   teardown(() => sandbox.restore());
 
   test('that the account-level base config for the settings app is defined', async () => {
-    const projectRoot = any.string();
+    const pathToGithubDirectory = any.string();
     const dumpedYaml = any.string();
     jsYaml.dump.withArgs({}).returns(dumpedYaml);
 
-    await scaffoldSettingsConfig({projectRoot});
+    await scaffoldSettingsConfig({pathToGithubDirectory});
 
-    assert.calledWith(fs.writeFile, `${projectRoot}/.github/settings.yml`, dumpedYaml);
+    assert.calledWith(fs.writeFile, `${pathToGithubDirectory}/settings.yml`, dumpedYaml);
   });
 });
