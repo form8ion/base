@@ -18,6 +18,10 @@ form8ion plugin for management of an organization's \`.github\` repository
   * [Dependencies](#dependencies)
   * [Verification](#verification)
 
+## Features
+
+* Manages the account-level config for the [repository-settings app](https://github.com/probot/settings)
+
 ## Usage
 
 <!--consumer-badges start -->
