@@ -11,12 +11,19 @@ form8ion plugin for management of an organization's \`.github\` repository
 
 ## Table of Contents
 
+* [Features](#features)
 * [Usage](#usage)
   * [Installation](#installation)
   * [Example](#example)
+    * [Import](#import)
+    * [Execute](#execute)
 * [Contributing](#contributing)
   * [Dependencies](#dependencies)
   * [Verification](#verification)
+
+## Features
+
+* Manages the account-level config for the [repository-settings app](https://github.com/probot/settings)
 
 ## Usage
 
@@ -49,6 +56,18 @@ import {scaffold} from '@form8ion/base';
   await scaffold({projectRoot: process.cwd()});
 })();
 ```
+
+#### API
+
+##### scaffold
+
+Scaffolder for configuring a `.github` repository for a GitHub account
+
+Accepts a single options object as an argument, containing:
+
+###### `projectRoot` __string__ (_required_)
+
+path to the root of the project
 
 ## Contributing
 
