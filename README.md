@@ -57,6 +57,18 @@ import {scaffold} from '@form8ion/base';
 })();
 ```
 
+#### API
+
+##### scaffold
+
+Scaffolder for configuring a `.github` repository for a GitHub account
+
+Accepts a single options object as an argument, containing:
+
+###### `projectRoot` __string__ (_required_)
+
+path to the root of the project
+
 ## Contributing
 
 <!--contribution-badges start -->
